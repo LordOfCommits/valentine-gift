@@ -1,0 +1,88 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #fc45d1;
+  background: linear-gradient(
+    172deg,
+    rgba(252, 69, 209, 1) 0%,
+    rgba(250, 242, 248, 1) 50%,
+    rgba(252, 69, 84, 1) 100%
+  );
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Google Sans Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.buttons {
+  display: flex;
+  gap: 50px;
+  margin-block: 100px;
+  justify-content: center;
+}
+
+.button {
+  all: unset;
+  padding: 10px;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  transform: scale(1.1) translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+#yes {
+  background: linear-gradient(135deg, #b6eea6 0%, #89d871 100%);
+  border: none;
+  color: #1a4314;
+}
+
+#no {
+  background: linear-gradient(135deg, #ff8a71 0%, #ff5e62 100%);
+  color: #fff;
+}
+
+.image {
+  width: 250px; 
+  height: 250px;
+  
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+  flex-shrink: 0; 
+  margin-block: 20px;
+}
+
+
+.free {
+  position: fixed;
+  z-index: 1000;
+  transition: all 0.2s ease-out !important;
+}
