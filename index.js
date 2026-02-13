@@ -46,7 +46,7 @@ const handleClickNo = () => {
     if (clickCount === 2) catImg.src = gifs.angry;
     if (clickCount === 3) catImg.src = gifs.fine;
     if (clickCount === 4) catImg.src = gifs.crying2;
-    if (clickCount > 5) catImg.src = gifs.nonono;
+    if (clickCount === 5) catImg.src = gifs.nonono;
   }
   if (clickCount >= noButtonText.length) {
     noButton.classList.add("free");
