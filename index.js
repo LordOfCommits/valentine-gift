@@ -41,7 +41,7 @@ const handleClickNo = () => {
   if (clickCount >= noButtonText.length) {
     catImg.src = gifs.tongue;
   } else {
-    catImg.src = gifs.love;
+    if (clickCount === 0) catImg.src = gifs.love;
     if (clickCount === 1) catImg.src = gifs.crying;
     if (clickCount === 2) catImg.src = gifs.angry;
     if (clickCount === 3) catImg.src = gifs.fine;
